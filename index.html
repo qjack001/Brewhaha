@@ -1,0 +1,32 @@
+---
+layout: default
+---
+
+<img src="{{ site.baseurl }}/assets/logo.png">
+<div class = "menu">
+    <div>
+        <h1>Standards</h1>
+        <p>Large black coffee, hot ............. 2$</p>
+        <p>Small black coffee, hot ............. 2$</p>
+        <p>Iced coffee ......................... 2$</p>
+        <p>Water ............................... 0$</p>
+    </div>
+    
+    <div>
+        <h1>Features</h1>
+        {% for post in site.posts %}
+            <h2>
+                {{ post.title }}&nbsp; 
+                {% assign chars = post.title | size %}
+                {% assign n = 40 | minus: chars %}
+                {% for num in (1..n) %}
+                .
+                {% endfor %}
+                &nbsp;{{ post.price }}
+            </h2>
+            <p>{{ post.content }}</p>
+        {% endfor %}
+    </div>
+</div>
+
+
