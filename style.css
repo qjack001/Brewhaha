@@ -49,3 +49,12 @@ p
 {
     text-align: justify;
 }
+
+.new::before
+{
+    content: "<div style='position:relitive;'><p style='position:absolute'>NEW</p>";
+    color: var(--red);
+    padding: 3px 6px;
+    border: 2px dashed var(--red);
+    transform: rotate(20deg);
+}
