@@ -43,6 +43,7 @@ h1
 h2
 {
     color: var(--red);
+    margin-top: 25px;
 }
 
 p
@@ -52,9 +53,12 @@ p
 
 .new::before
 {
-    content: "<div style='position:relitive;'><p style='position:absolute'>NEW</p>";
+    content: "NEW";
     color: var(--red);
     padding: 3px 6px;
     border: 2px dashed var(--red);
-    transform: rotate(20deg);
+    transform: rotate(-20deg);
+    position: absolute;
+    margin-left: -40px;
+    margin-top: -10px;
 }
