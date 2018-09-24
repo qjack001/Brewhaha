@@ -68,11 +68,13 @@ p
     background-size: contain;
     background-repeat: no-repeat;
     background-image: url("./assets/logo-horizontal.png");
-    width: calc(100% - 60px);
+    width: calc(100% - 260px);
     max-width: 430px;
-    padding-top: calc(calc(100% - 60px) * 0.16);
-    margin: 70px auto;
+    padding: 0px;
+    padding-top: calc(430px * 0.16);
+    margin: 70px auto 0px auto;
     position: relative;
+    
 }
 
 .motto
@@ -91,5 +93,10 @@ p
     .motto
     {
         margin: 20px auto 10px auto;
+    }
+    
+    .logo
+    {
+        padding-top: calc(calc(100%-260px) * 0.16);
     }
 }
