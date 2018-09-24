@@ -68,7 +68,7 @@ p
     background-size: contain;
     background-repeat: no-repeat;
     background-image: url("./assets/logo-horizontal.png");
-    width: calc(100% - 260px);
+    width: calc(100% - 140px);
     max-width: 430px;
     padding: 0px;
     padding-top: calc(430px * 0.16);
@@ -97,6 +97,6 @@ p
     
     .logo
     {
-        padding-top: calc(calc(100%-260px) * 0.16);
+        padding-top: calc(calc(100%-140px) * 0.16);
     }
 }
