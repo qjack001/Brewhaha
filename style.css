@@ -65,40 +65,26 @@ p
 
 .logo
 {
-    background-image: url("./assets/logo.png");
-    width: 66px;
-    height: 416px;
     background-size: contain;
     background-repeat: no-repeat;
-    margin: 50px 80px;
-    position: absolute;
-    top: 0;
-    left: 0;
+    background-image: url("./assets/logo-horizontal.png");
+    width: calc(100% - 60px);
+    padding-top: calc(calc(100% - 60px) * 0.16);
+    margin: 70px auto;
+    position: relative;
 }
 
 .motto
 {
-    margin: 180px auto 50px auto;
+    text-align: center;
+    margin: 40px auto 100px auto;
+    height: 0px;
 }
 
 @media only screen and (max-width: 470px)
 {
     *
     {
-        font-size: 1rem;
-    }
-    
-    .motto
-    {
-        margin: 40px auto;
-    }
-    
-    .logo
-    {
-        background-image: url("./assets/logo-horizontal.png");
-        width: calc(100% - 60px);
-        padding-top: calc(calc(100% - 60px) * 0.16);
-        margin: 50px auto;
-        position: relative;
+        font-size: 0.5rem;
     }
 }
