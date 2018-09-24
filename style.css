@@ -65,15 +65,20 @@ p
 
 .logo
 {
-    background-image: url("./assets/logo-horizontal.png");
+    background-image: url("./assets/logo.png");
     width: 66px;
     height: 416px;
     background-size: contain;
     background-repeat: no-repeat;
-    margin: 50px 20px;
+    margin: 50px 80px;
     position: absolute;
     top: 0;
     left: 0;
+}
+
+.motto
+{
+    margin: 180px auto 50px auto;
 }
 
 @media only screen and (max-width: 470px)
@@ -83,11 +88,16 @@ p
         font-size: 1rem;
     }
     
+    .motto
+    {
+        margin: 40px auto;
+    }
+    
     .logo
     {
         background-image: url("./assets/logo-horizontal.png");
-        width: 416px;
-        height: 66px;
+        width: calc(100% - 60px);
+        padding-top: calc(calc(100% - 60px) * 0.16);
         margin: 50px auto;
         position: relative;
     }
