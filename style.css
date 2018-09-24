@@ -62,3 +62,33 @@ p
     margin-left: -40px;
     margin-top: -10px;
 }
+
+.logo
+{
+    background-image: url("./assets/logo-horizontal.png");
+    width: 66px;
+    height: 416px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: 50px 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+@media only screen and (max-width: 470px)
+{
+    *
+    {
+        font-size: 1rem;
+    }
+    
+    .logo
+    {
+        background-image: url("./assets/logo-horizontal.png");
+        width: 416px;
+        height: 66px;
+        margin: 50px auto;
+        position: relative;
+    }
+}
