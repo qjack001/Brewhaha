@@ -87,7 +87,9 @@ footer .motto
 {
     padding: 15px 40px;
     background-color: var(--lavendar);
-    margin-top: 100px;
+    margin: 0px auto;
+    border-radius: 50px;
+    width: max-content;
 }
 
 footer
