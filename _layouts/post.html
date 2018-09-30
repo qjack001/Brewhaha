@@ -6,13 +6,19 @@ layout: default
 <p class="motto">&ldquo;Best coffee in Crosstown&rdquo;</p>
 
 <div class="columns">
-    <div class="column" style="background-image: url('{{ site.baseurl }}/images/{{ page.image }}')">
+    <div class="column" id="image" style="width: 30%; background-image: url('{{ site.baseurl }}/images/{{ page.image }}')">
     </div>
     <div class="column">
         <h1>{{ page.title }}</h1>
         <h2 class="price">{{ page.price }}</h2> 
-        <div class="content">  
+        <div class="content">
             {{ content }}
         </div>
     </div>
 </div>
+
+
+<script>
+    let r = (Math.random() * 30) - 15;
+    document.getElementById("image").style.transform = "rotate(" + r + "deg)";
+</script>
