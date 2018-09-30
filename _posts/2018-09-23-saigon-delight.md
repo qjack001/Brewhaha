@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Saigon Delight
-price: 12$
+price: 9$
 image: siagon.png
 ---
 
