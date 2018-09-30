@@ -16,10 +16,12 @@ layout: default
     <div>
         <h1>Features</h1>
         {% for post in site.posts %}
-            <h2>
-                {{ post.title }}&nbsp;{% assign chars = post.title | size %}{% assign n = 36 | minus: chars %}{% for num in (1..n) %}.{% endfor %}&nbsp;{{ post.price }}
-            </h2>
-            <p>{{ post.content }}</p>
+            <div class="menu-item" onclick="window.location='{{ site.baseurl }}{{ post.url }}'">
+                <h2>
+                    {{ post.title }}&nbsp;{% assign chars = post.title | size %}{% assign n = 36 | minus: chars %}{% for num in (1..n) %}.{% endfor %}&nbsp;{{ post.price }}
+                </h2>
+                <p>{{ post.content }}</p>
+            </div>
         {% endfor %}
     </div>
 </div>
