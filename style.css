@@ -119,6 +119,47 @@ footer
     padding: 50px 0;
 }
 
+.columns
+{
+    max-width: 800px;
+    margin: -20px auto 500px auto;
+}
+
+.column 
+{
+    float: left;
+    margin: 20px;
+    width: calc(50% - 40px);
+    padding: 10px;
+    min-height: 300px;
+    box-sizing: border-box;
+    background-color: var(--lavendar);
+    background-blend-mode: multiply;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right;
+    
+}
+
+.row:after 
+{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.price
+{
+    border-radius: 100%;
+    padding: 20px;
+    border: 2.4px dashed var(--red);
+    width: 1.5rem;
+    width: min-content;
+    font-size: 1.5rem;
+    transform: rotate(-20deg);
+    margin: -55px 9rem 0px 9rem;
+}
+
 @media only screen and (max-width: 560px)
 {
     *
@@ -141,5 +182,11 @@ footer
         background-size: 70px;
         margin-top: 70px;
         padding: 30px 0;
+    }
+    
+    .column 
+    {
+        width: 100%;
+        background-position: center;
     }
 }
