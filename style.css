@@ -208,5 +208,6 @@ footer
         width: 30%;
         margin: 130px 30% 0 30%;
         position: absolute;
+        background-color: transparent;
     }
 }
