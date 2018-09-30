@@ -35,15 +35,17 @@ html
 .menu-item
 {
     padding: 5rem;
-    margin-top: 20px;
+    margin: 0 0 0 -2rem;
+    width: 30rem;
     cursor: pointer;
     border: 2px dashed transparent;
-    transition: all 0.2s ease;
+    transition: all 0.2s ease-out;
 }
 
 .menu-item:hover
 {
     border-color: var(--red);
+    transition: all 0.05s cubic-bezier(0.55, 0.06, 0.68, 0.19);;
 }
 
 h1
