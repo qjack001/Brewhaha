@@ -74,7 +74,7 @@ p
     border: 2px dashed var(--red);
     transform: rotate(-20deg);
     position: absolute;
-    margin-left: -40px;
+    margin-left: -2rem;
     margin-top: -10px;
 }
 
@@ -89,7 +89,7 @@ p
     padding-top: calc(430px * 0.16);
     margin: 70px auto 0px auto;
     position: relative;
-    
+    cursor: pointer;
 }
 
 .motto
