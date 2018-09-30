@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Autum Breeze
-price: 2$
+price: 9$
 image: coldbrew.png
 ---
 
