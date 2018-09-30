@@ -3,6 +3,7 @@
     font-family: vulf;
     src: url("./assets/fonts/Vulf-Mono.ttf");
 }
+
 :root
 {
     --lavendar: #E9E0FD;
@@ -39,13 +40,13 @@ html
     width: 30rem;
     cursor: pointer;
     border: 2px dashed transparent;
-    transition: all 0.2s ease-out;
+    transition: all 0.1s ease-in;
 }
 
 .menu-item:hover
 {
     border-color: var(--red);
-    transition: all 0.05s cubic-bezier(0.55, 0.06, 0.68, 0.19);;
+    transition: all 0.1s ease-out;
 }
 
 h1
@@ -160,6 +161,11 @@ footer
     margin: -55px 9rem 0px 9rem;
 }
 
+#image
+{
+    width: 30%;
+}
+
 @media only screen and (max-width: 560px)
 {
     *
@@ -186,7 +192,22 @@ footer
     
     .column 
     {
-        width: 100%;
+        width: 80%;
+        margin: 40px auto 0 auto;
+        float: none;
+        height: 0px;
         background-position: center;
+    }
+    
+    .columns
+    {
+        margin-bottom: 50px;
+    }
+    
+    #image
+    {
+        width: 30%;
+        margin: 130px 30% 0 30%;
+        position: absolute;
     }
 }
