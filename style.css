@@ -40,6 +40,7 @@ html
     width: 30rem;
     cursor: pointer;
     border: 2px dashed transparent;
+    border-radius: 5px;
     transition: all 0.1s ease-in;
 }
 
@@ -77,6 +78,7 @@ p
     position: absolute;
     margin-left: -2rem;
     margin-top: -10px;
+    border-radius: 5px;
 }
 
 .logo
